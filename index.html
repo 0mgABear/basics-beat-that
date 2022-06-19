@@ -49,7 +49,7 @@
   </head>
 
   <body>
-    <h1 id="header">Basics: Beat That! 🚀</h1>
+    <h1 id="header">🎲 Basics: Beat That! 🎲</h1>
     <div id="container">
       <p>Input:</p>
       <input id="input-field" />
@@ -58,10 +58,11 @@
       <p>Output:</p>
       <div id="output-div"></div>
     </div>
-    <!-- Import program logic -->
+
     <script src="script.js"></script>
-    <!-- Define button click functionality -->
     <script>
+      var output = document.querySelector("#output-div");
+      output.innerHTML = `Welcome to YY's Beat That. <br> Press submit to roll two dices. <br> You will be able to choose the order of your dice roll. <br> The player with the higher dice roll wins! Best of luck! <br><br> You may enter "quit" at any point in time to quit the game!`;
       var button = document.querySelector("#submit-button");
       button.addEventListener("click", function () {
         // Set result to input value
